@@ -1,11 +1,6 @@
 ---
 name: Build
-on:
-  push:
-    branches:
-      - main
-  pull_request: {}
-  workflow_dispatch: {}
+on: push
 
 jobs:
   build:
@@ -25,3 +20,8 @@ jobs:
 
       - name: Build without tests
         run: mvn --batch-mode -Dgpg.skip=true -Dmaven.test.skip=true clean package
+      - name: Release to GitHub
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            target/hetznercloud-api*.jar
