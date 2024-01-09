@@ -33,5 +33,4 @@ public class CreateLoadBalancerRequest {
     private Boolean publicInterface;
     private Long network;
 
-
 }
