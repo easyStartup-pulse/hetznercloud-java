@@ -24,7 +24,7 @@ public class CreateLoadBalancerRequest {
     @JsonProperty("network_zone")
     private String networkZone;
     private String location;
-    private String algorithm;
+    private CreateLoadBalancerRequestAlgorithmType algorithm;
     private List<LBService> services;
     private List<LBTarget> targets;
     @Singular
@@ -32,4 +32,6 @@ public class CreateLoadBalancerRequest {
     @JsonProperty("public_interface")
     private Boolean publicInterface;
     private Long network;
+
+
 }
