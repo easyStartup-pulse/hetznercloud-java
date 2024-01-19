@@ -1,3 +1,26 @@
+# Patch Release v3.2.3 (2024-01-16)
+  * **Christian Pelster**
+    * certificate: add missing type field
+  * **easyStartup-pulse**
+    * loadbalancer: add getByName
+
+*Released by Tom Siewert <tom@siewert.io>*
+
+# Patch Release v3.2.2 (2024-01-10)
+  * **easyStartup-pulse**
+    * loadbalancer: fix algorithm flag in create request
+
+*Released by Tom Siewert <tom@siewert.io>*
+
+# Patch Release v3.2.1 (2024-01-08)
+  * **Tom Siewert**
+    * ISO: Remove "deprecated" field
+    * ISO: add missing deprecation field
+  * **easyStartup-pulse**
+    * Adding support for firewall as input parameter for create server
+
+*Released by Tom Siewert <tom@siewert.io>*
+
 # Minor Release v3.2.0 (2023-08-23)
   * **Tom Siewert**
     * ServerType: Add CCX*3 types
